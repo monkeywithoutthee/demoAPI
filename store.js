@@ -4,7 +4,6 @@ const knex = require('knex')(require('./knexfile'))
 module.exports = {
 
   getWordFrom(data){
-    //  console.log('in store getJokeFrom::',data.text);
     return knex.raw(`call getWord('${data.text}',${data.fetchType})`)
      .then(function(result) {
        //console.log('getWord result::',result);
