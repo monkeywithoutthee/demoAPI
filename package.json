@@ -13,7 +13,7 @@
     "knex",
     "cors"
   ],
-  "author": "stephen monk",
+  "author": "stephen 'harry' monk",
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
