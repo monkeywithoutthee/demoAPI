@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 
 app.get('/test', function (req, res) {
 //	console.log('getting::');
-  res.send('hello, world!')
+  res.send('getting it!')
 });
 
 app.post('/getWordFrom', function (req, res) {
