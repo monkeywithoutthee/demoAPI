@@ -11,7 +11,6 @@ module.exports = {
        if(j.length===0){
          j=[{word:data.text + ' is not a word',definition:''}];
        }
-       //console.log('RETURNS getJokeFrom::',j,j.length);
          return j;
       });
     }
