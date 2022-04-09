@@ -22,7 +22,7 @@ app.post('/getWordFrom', function (req, res) {
   var aHeaders = req.headers;
   var aBody = req.body;
 //  console.log("id:", id);
-  if (aHeaders.monkey==="spL1shSplAshSploS4"){//basic header check
+  if (aHeaders.apikey==="yourSecre4tHe4derKey"){//basic header check
       try{
         store
         .getWordFrom(aBody)
