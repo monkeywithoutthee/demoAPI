@@ -1,20 +1,24 @@
 {
   "name": "demoapi",
   "version": "1.0.0",
-  "description": "demo app displaying use on node express as a data server",
+  "description": "Demo api designed to return data only",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "api",
-    "server",
-    "data"
+    "node",
+    "express",
+    "knex",
+    "cors"
   ],
-  "author": "stephen 'harry' monk",
+  "author": "stephen monk",
   "license": "MIT",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.3",
-    "knex": "^1.0.5"
+    "knex": "^1.0.5",
+    "mysql": "^2.18.1"
   }
 }
