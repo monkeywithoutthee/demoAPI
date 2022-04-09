@@ -5,7 +5,6 @@ const store = require('./store');
 const app = express();
 
 app.use(cors());
-//app.use(express.static('public'));
 const router = express.Router();
 app.use(bodyParser.json());
 
@@ -19,20 +18,11 @@ app.post('/getWordFrom', function (req, res) {
   var aHeaders = req.headers;
 //  var aBody = req.body;
   //console.log("addLeaderreq:", req);
-//  console.log(req.body,"<<TEST headers:", aHeaders);//simple as it gets authorisarion  - expand with need
   var id = req.params.id;
   var aHeaders = req.headers;
   var aBody = req.body;
-  
-  //console.log("addLeaderreq:", req);
-/*  res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Credentials', 'true');
-  res.header('Access-Control-Allow-Methods', 'POST');
-  res.header('Access-Control-Expose-Headers', 'Content-Length');
-  res.header('Access-Control-Allow-Headers', 'Accept, Authorization, Content-Type, X-Requested-With, Range');*/
- // console.log("getWordFrom:",req.body);
 //  console.log("id:", id);
-  if (aHeaders.monkey==="spL1shSplAshSploS4"){
+  if (aHeaders.monkey==="spL1shSplAshSploS4"){//basic header check
       try{
         store
         .getWordFrom(aBody)
@@ -41,7 +31,7 @@ app.post('/getWordFrom', function (req, res) {
         })
       }catch(err){
         console.error(err);
-        res.end("there was an error getting your ten quotes!!!");
+        res.end("there was an error getting your word!!!");
       };
     }else{
         res.end("get word UNAUTHORISED CONNECTION!!!");
