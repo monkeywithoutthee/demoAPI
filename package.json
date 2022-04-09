@@ -1,0 +1,20 @@
+{
+  "name": "demoapi",
+  "version": "1.0.0",
+  "description": "demo app displaying use on node express as a data server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "api",
+    "server",
+    "data"
+  ],
+  "author": "stephen 'harry' monk",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.3",
+    "knex": "^1.0.5"
+  }
+}
