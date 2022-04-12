@@ -16,13 +16,8 @@ app.get('/test', function (req, res) {
 
 app.post('/getWordFrom', function (req, res) {
   var aHeaders = req.headers;
-//  var aBody = req.body;
-  //console.log("addLeaderreq:", req);
-  var id = req.params.id;
-  var aHeaders = req.headers;
   var aBody = req.body;
   const scheck = 'yourSecre4tHe4derKey' === aHeaders.apikey;
-//  console.log("id:", id);
   if (scheck){//basic header check
       try{
         store
